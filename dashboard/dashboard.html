@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflex Dashboard</title>
+    
+    <link rel="stylesheet" href="dashboard.css">
+
+</head>
+<body>
+    <div class="sidebar">
+        <h2>🧠 Reflex Dashboard</h2>
+        <ul>
+            <li><a href="#" id="nav-home">🏠 Home</a></li>
+            <li><a href="#" id="nav-appointments">📅 Appointments</a></li>
+            <li><a href="#" id="nav-users">👥 Users</a></li>
+            <li><a href="#" id="nav-settings">⚙️ Settings</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h1>Welcome, Admin!</h1>
+            <p>Monitor and manage your appointments and user data efficiently.</p>
+        </header>
+
+        <section id="home-section" class="content-section active">
+            <h2>👋 Welcome to Reflex Dashboard</h2>
+            <div class="summary-cards">
+                <div class="card">
+                    <h3>Total Appointments</h3>
+                    <p>50</p>
+                </div>
+                <div class="card">
+                    <h3>New Users Today</h3>
+                    <p>10</p>
+                </div>
+                <div class="card">
+                    <h3>Pending Appointments</h3>
+                    <p>5</p>
+                </div>
+            </div>
+        </section>
+ 
+
+        <section id="appointments-section" class="content-section">
+            <h2>📅 Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mukit</td>
+                        <td>mukit@gmail.com</td>
+                        <td>123-456-7890</td>
+                        <td>2024-11-25</td>
+                        <td>10:00 AM</td>
+                        <td class="status" data-id="1">Pending</td>
+                        <td>
+                            <button class="status-btn approve" data-id="1">Approve</button>
+                            <button class="status-btn reject" data-id="1">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Ashik</td>
+                        <td>ashik@gmail.com</td>
+                        <td>987-654-3210</td>
+                        <td>2024-11-26</td>
+                        <td>02:00 PM</td>
+                        <td class="status" data-id="2">Pending</td>
+                        <td>
+                            <button class="status-btn approve" data-id="2">Approve</button>
+                            <button class="status-btn reject" data-id="2">Reject</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Dipto</td>
+                        <td>dipto@gmail.com</td>
+                        <td>555-123-4567</td>
+                        <td>2024-11-27</td>
+                        <td>11:30 AM</td>
+                        <td class="status" data-id="3">Pending</td>
+                        <td>
+                            <button class="status-btn approve" data-id="3">Approve</button>
+                            <button class="status-btn reject" data-id="3">Reject</button>
+                        </td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+        
+
+        <!-- Users Section -->
+        <section id="users-section" class="content-section">
+            <h2>👥 New User Registrations</h2>
+            <table id="users-table">
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Registration Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Shafia</td>
+                        <td>shafia@gmail.com</td>
+                        <td>2024-11-23</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jbrown</td>
+                        <td>james.brown@example.com</td>
+                        <td>2024-11-22</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>JB</td>
+                        <td>jb@gmail.com</td>
+                        <td>2024-11-21</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>William Clark</td>
+                        <td>william.clark@example.com</td>
+                        <td>2024-11-20</td>
+                    </tr>
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <section id="settings-section" class="content-section">
+        <h2>⚙️ Settings</h2>
+        <p>Settings section coming soon!</p>
+    </section>
+
+    <script src="dashboard.js"></script>
+</body>
+</html>
