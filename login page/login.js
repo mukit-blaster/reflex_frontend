@@ -42,7 +42,7 @@ document.querySelector(".login-btn").addEventListener("click", function (e) {
     localStorage.setItem("username", username);
 
     // Redirect to the main page
-    window.location.href = "/index.html";
+    window.location.href = "./index.html";
   } else {
     alert("Please enter both username and password.");
   }
